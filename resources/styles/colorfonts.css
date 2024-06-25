@@ -8,37 +8,223 @@
 
 /*👉 -------------- TÍTULOS --------------👈*/
 @font-face {
-    font-family: '';
-    font-style: ;
-    font-weight: ;
-    src: url(../fonts/.otf) format("opentype"),
-        url(../fonts/.ttf) format("truetype"),
-        url(../fonts/.woff2) format("woff2"),
-        url(../fonts/.woff) format("woff");
+    font-family: 'Open Sans';
+    font-style: normal ;
+    font-weight: 300 ;
+    src: url(../fonts/OpenSans-Light.otf) format("opentype"),
+        url(../fonts/OpenSans-Light.ttf) format("truetype"),
+        url(../fonts/OpenSans-Light.woff2) format("woff2"),
+        url(../fonts/OpenSans-Light.woff) format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic ;
+    font-weight: 300 ;
+    src: url(../fonts/OpenSans-LightItalic.otf) format("opentype"),
+        url(../fonts/OpenSans-LightItalic.ttf) format("truetype"),
+        url(../fonts/OpenSans-LightItalic.woff2) format("woff2"),
+        url(../fonts/OpenSans-LightItalic.woff) format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal ;
+    font-weight: 400 ;
+    src: url(../fonts/OpenSans-Regular.otf) format("opentype"),
+        url(../fonts/OpenSans-Regular.ttf) format("truetype"),
+        url(../fonts/OpenSans-Regular.woff2) format("woff2"),
+        url(../fonts/OpenSans-Regular.woff) format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic ;
+    font-weight: 400 ;
+    src: url(../fonts/OpenSans-Italic.otf) format("opentype"),
+        url(../fonts/OpenSans-Italic.ttf) format("truetype"),
+        url(../fonts/OpenSans-Italic.woff2) format("woff2"),
+        url(../fonts/OpenSans-Italic.woff) format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal ;
+    font-weight: 500 ;
+    src: url(../fonts/OpenSans-Medium.otf) format("opentype"),
+        url(../fonts/OpenSans-Medium.ttf) format("truetype"),
+        url(../fonts/OpenSans-Medium.woff2) format("woff2"),
+        url(../fonts/OpenSans-Medium.woff) format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic ;
+    font-weight: 500 ;
+    src: url(../fonts/OpenSans-MediumItalic.otf) format("opentype"),
+        url(../fonts/OpenSans-MediumItalic.ttf) format("truetype"),
+        url(../fonts/OpenSans-MediumItalic.woff2) format("woff2"),
+        url(../fonts/OpenSans-MediumItalic.woff) format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight:600 ;
+    src: url(../fonts/OpenSans-SemiBold.otf) format("opentype"),
+    url(../fonts/OpenSans-SemiBold.ttf) format("truetype"),
+    url(../fonts/OpenSans-SemiBold.woff2) format("woff2"),
+    url(../fonts/OpenSans-SemiBold.woff) format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight:600 ;
+    src: url(../fonts/OpenSans-SemiBoldItalic.otf) format("opentype"),
+    url(../fonts/OpenSans-SemiBoldItalic.ttf) format("truetype"),
+    url(../fonts/OpenSans-SemiBoldItalic.woff2) format("woff2"),
+    url(../fonts/OpenSans-SemiBoldItalic.woff) format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight:700 ;
+    src: url(../fonts/OpenSans-Bold.otf) format("opentype"),
+    url(../fonts/OpenSans-Bold.ttf) format("truetype"),
+    url(../fonts/OpenSans-Bold.woff2) format("woff2"),
+    url(../fonts/OpenSans-Bold.woff) format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight:700 ;
+    src: url(../fonts/OpenSans-BoldItalic.otf) format("opentype"),
+    url(../fonts/OpenSans-BoldItalic.ttf) format("truetype"),
+    url(../fonts/OpenSans-BoldItalic.woff2) format("woff2"),
+    url(../fonts/OpenSans-BoldItalic.woff) format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight:800 ;
+    src: url(../fonts/OpenSans-ExtraBold.otf) format("opentype"),
+    url(../fonts/OpenSans-ExtraBold.ttf) format("truetype"),
+    url(../fonts/OpenSans-ExtraBold.woff2) format("woff2"),
+    url(../fonts/OpenSans-ExtraBold.woff) format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight:800 ;
+    src: url(../fonts/OpenSans-ExtraBoldItalic.otf) format("opentype"),
+    url(../fonts/OpenSans-ExtraBoldItalic.ttf) format("truetype"),
+    url(../fonts/OpenSans-ExtraBoldItalic.woff2) format("woff2"),
+    url(../fonts/OpenSans-ExtraBoldItalic.woff) format("woff");
     font-display: swap;
 }
 
 /*👉 -------------- CITAÇÕES --------------👈*/
 @font-face {
-    font-family: '';
-    font-style: ;
-    font-weight: ;
-    src: url(../fonts/.otf) format("opentype"),
-        url(../fonts/.ttf) format("truetype"),
-        url(../fonts/.woff2) format("woff2"),
-        url(../fonts/.woff) format("woff");
+    font-family: 'Merriweather';
+    font-style:normal ;
+    font-weight: 300 ;
+    src: url(../fonts/Merriweather-Light.otf) format("opentype"),
+        url(../fonts/Merriweather-Light.ttf) format("truetype"),
+        url(../fonts/Merriweather-Light.woff2) format("woff2"),
+        url(../fonts/Merriweather-Light.woff) format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Merriweather';
+    font-style:italic ;
+    font-weight:300 ;
+    src: url(../fonts/Merriweather-LightItalic.otf) format("opentype"),
+        url(../fonts/Merriweather-LightItalic.ttf) format("truetype"),
+        url(../fonts/Merriweather-LightItalic.woff2) format("woff2"),
+        url(../fonts/Merriweather-LightItalic.woff) format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Merriweather';
+    font-style: normal ;
+    font-weight: 400 ;
+    src: url(../fonts/Merriweather-Regular.otf) format("opentype"),
+        url(../fonts/Merriweather-Regular.ttf) format("truetype"),
+        url(../fonts/Merriweather-Regular.woff2) format("woff2"),
+        url(../fonts/Merriweather-Regular.woff) format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Merriweather';
+    font-style: italic;
+    font-weight:400 ;
+    src: url(../fonts/Merriweather-Italic.otf) format("opentype"),
+        url(../fonts/Merriweather-Italic.ttf) format("truetype"),
+        url(../fonts/Merriweather-Italic.woff2) format("woff2"),
+        url(../fonts/Merriweather-Italic.woff) format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight:700 ;
+    src: url(../fonts/Merriweather-Bold.otf) format("opentype"),
+        url(../fonts/Merriweather-Bold.ttf) format("truetype"),
+        url(../fonts/Merriweather-Bold.woff2) format("woff2"),
+        url(../fonts/Merriweather-Bold.woff) format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Merriweather';
+    font-style: italic;
+    font-weight:700 ;
+    src: url(../fonts/Merriweather-BoldItalic.otf) format("opentype"),
+        url(../fonts/Merriweather-BoldItalic.ttf) format("truetype"),
+        url(../fonts/Merriweather-BoldItalic.woff2) format("woff2"),
+        url(../fonts/Merriweather-BoldItalic.woff) format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight:900 ;
+    src: url(../fonts/Merriweather-Black.otf) format("opentype"),
+        url(../fonts/Merriweather-Black.ttf) format("truetype"),
+        url(../fonts/Merriweather-Black.woff2) format("woff2"),
+        url(../fonts/Merriweather-Black.woff) format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    font-style: italic;
+    font-weight:900 ;
+    src: url(../fonts/Merriweather-BlackItalic.otf) format("opentype"),
+        url(../fonts/Merriweather-BlackItalic.ttf) format("truetype"),
+        url(../fonts/Merriweather-BlackItalic.woff2) format("woff2"),
+        url(../fonts/Merriweather-BlackItalic.woff) format("woff");
     font-display: swap;
 }
 
 /*👉 -------------- TEXTO --------------👈*/
 @font-face {
-    font-family: '';
-    font-style: ;
-    font-weight: ;
-    src: url(../fonts/.otf) format("opentype"),
-        url(../fonts/.ttf) format("truetype"),
-        url(../fonts/.woff2) format("woff2"),
-        url(../fonts/.woff) format("woff");
+    font-family: 'Arial';
+    font-style:normal ;
+    font-weight:400 ;
+    src: url(../fonts/Arial.otf) format("opentype"),
+        url(../fonts/Arial.ttf) format("truetype"),
+        url(../fonts/Arial.woff2) format("woff2"),
+        url(../fonts/Arial.woff) format("woff");
     font-display: swap;
 }
 
@@ -46,15 +232,46 @@
 
 /*👉 -------------- ORDINAL --------------👈*/
 @font-face {
-    font-family: '';
-    font-style: ;
-    font-weight: ;
-    src: url(../fonts/.otf) format("opentype"),
-        url(../fonts/.ttf) format("truetype"),
-        url(../fonts/.woff2) format("woff2"),
-        url(../fonts/.woff) format("woff");
+    font-family: 'Calibri';
+    font-style: normal ;
+    font-weight: bold ;
+    src: url(../fonts/calibri-bold.otf) format("opentype"),
+        url(../fonts/calibri-bold.ttf) format("truetype"),
+        url(../fonts/calibri-bold.woff2) format("woff2"),
+        url(../fonts/calibri-bold.woff) format("woff");
     font-display: swap;
 }
+@font-face {
+    font-family: 'Calibri';
+    font-style:italic ;
+    font-weight:bold ;
+    src: url(../fonts/calibri-bold-italic.otf) format("opentype"),
+        url(../fonts/calibri-bold-italic.ttf) format("truetype"),
+        url(../fonts/calibri-bold-italic.woff2) format("woff2"),
+        url(../fonts/calibri-bold-italic.woff) format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Calibri';
+    font-style:italic ;
+    font-weight:400 ;
+    src: url(../fonts/calibri-italic.otf) format("opentype"),
+        url(../fonts/calibri-italic.ttf) format("truetype"),
+        url(../fonts/calibri-italic.woff2) format("woff2"),
+        url(../fonts/calibri-italic.woff) format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Calibri';
+    font-style:normal ;
+    font-weight:400 ;
+    src: url(../fonts/calibri-regular.otf) format("opentype"),
+        url(../fonts/calibri-regular.ttf) format("truetype"),
+        url(../fonts/calibri-regular.woff2) format("woff2"),
+        url(../fonts/calibri-regular.woff) format("woff");
+    font-display: swap;
+}
+
 
 /*👉 -------------- QUIMICO --------------👈*/
 @font-face {
@@ -71,12 +288,12 @@
 
 :root {
     /* Fontes */
-    --titulo:  ;
-    --citacao: ;
-    --texto:   ;
-    --ordinal: ;
-    --quimico: ;
-    --fonema: ;
+    --titulo: 'Open Sans' ;
+    --citacao:'Merriweather' ;
+    --texto: 'Arial';
+    --ordinal:'Calibri' ;
+    --quimico:'Calibri' ;
+    --fonema: 'Calibri';
 
     /* Tamanhos */
     --peso1: 1.8em;
@@ -97,39 +314,42 @@
     --preto_: #2B2E34;
     --preto:#000;
     --branco: #fff;
-    --cinza: #ececec;
+    --cinza: #d0d0cf;
+    --cinzarecado: #ececec;
     --link: #00649c;
     --manualu: #E4F2E7;
+    --apresentacao: #dff1fd;
+    --recado: #ececec;
 
     
-    --azul1:#398CCB;
-    --azul2:#86C2EB;
-    --azul3:#BCDCF5;
-    --azul4:#DFEAF8;
+    --azul1:#4b76ba;
+    --azul2:#7196ce;
+    --azul3:#c8d9f1;
+    --azul4:#dee9f8;
 
-    --turquesa1:#00ACA9;
-    --turquesa2:#87CDD3;
-    --turquesa3:#BEE2E9;
-    --turquesa4:#E0F1F5;
+    --turquesa1:#003c3c;
+    --turquesa2:#069197;
+    --turquesa3:#96d1d4;
+    --turquesa4:#e0f1f4;
 
-    --verde1:#4DB05B;
-    --verde2:#9BCEA4;
-    --verde3:#CCE4CE;
-    --verde4:#E1F0EB;
+    --verde1:#00a159;
+    --verde2:#6eaa27;
+    --verde3:#cce4ce;
+    --verde4:#e2edcf;
 
     --citrico1:#94C23E;
     --citrico2:#D0DE84;
     --citrico3:#E4ECBC;
     --citrico4:#ECF3DA;
 
-    --laranja1:#F07F3C;
-    --laranja2:#F7AE82;
-    --laranja3:#FCD7B8;
+    --laranja1:#ec8e3b;
+    --laranja2:#fcd7b8;
+    --laranja3:#fdece4;
     --laranja4:#FDE7DD;
 
-    --amarelo1:#FBB900;
-    --amarelo2:#FED27A;
-    --amarelo3:#FFE6AC;
+    --amarelo1:#f2e400;
+    --amarelo2:#fbed66;
+    --amarelo3:#fff9c7;
     --amarelo4:#FEEFDE;
 
     --vermelho1:#ac2d31;
@@ -137,20 +357,48 @@
     --vermelho3:#fce3df;
     --vermelho4:#fff5f3;
 
-    --rosa1:#ED6D84;
-    --rosa2:#F39DB0;
+    --rosa1:#ea5178;
+    --rosa2:#f9d1d5;
     --rosa3:#F8C7D0;
     --rosa4:#FCE5E9;
 
-    --roxo1:#7263A9;
-    --roxo2:#A69DCD;
-    --roxo3:#D2CDE8;
-    --roxo4:#EDEBF7;
+    --roxo1:#470f50;
+    --roxo2:#a61680;
+    --roxo3:#e7d5ea;
+    --roxo4:#f2e9f4;
 
-    --lilas1:#7263A9;
-    --lilas2:#A69DCD;
-    --lilas3:#D2CDE8;
-    --lilas4:#EDEBF7;
+    --lilas1:#6e358b;
+    --lilas2:#7e5ca3;
+    --lilas3:#c7c1e1;
+    --lilas4:#e8e5f3;
+
+    --mostarda: #e6e09b;
+
+    --odsEscuro: #9c0f06;
+    --ods: #e30513;
+    --odsFundo: #fbd9d2;
+   
+    --odsFndAzul: #dff2fd;
+   
+    --estrategiaEscuro: #af2608;
+    --estrategia: #ed7102;
+    --estrategiaFundo:#fde1c6;
+   
+   
+    --juventudesEscuro:#006f2c;
+    --juventudes: #55a932;
+    --juventudesFundo: #e1efe3;
+   
+    --midiaticaEscuro:#0056a4;
+    --midiatica: #009ed4;
+    --midiaticaFundo: #d4edfc;
+
+    --manuFundo: #f8f5ea;
+    --manuGravata:#ebc19d; 
+    --manuVocabulario:#7e2c2a;
+    --manuEsquema1:#26466d;
+    --manuEsquema2:#aabad2;
+    --manuEsquema3: #e9cb68;
 }
 
 .boxdegrade{
