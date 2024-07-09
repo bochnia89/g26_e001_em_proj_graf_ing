@@ -161,8 +161,9 @@ hifen_ano
 .d0box_aluno{
     padding: 0.5em 0 1em 0;
 }
-.d0box_especificompu{
-    background: var(--manualu);
+.d0box_especificompu,
+.d0box_geralmp{
+    background: var(--manuFundo);
     padding: 0 1em 1em 1em;
 }
 .d0box_geralmp{}
@@ -375,9 +376,9 @@ header .pag {
 
 /*👉 ================ SUMÁRIO / APRESENTAÇÃO E CONHEÇA LT ==================👈*/
 /* 
-secsumario
-sumariosecinicial
-navsumario
+d0secsumario
+d0sumariosecinicial
+d0navsumario
 
 p1sumariopv
 p1seciniciaistit1
@@ -399,17 +400,119 @@ p1sumariooedpeso2
 
 */
 
-.p1seciniciaistit1{}
-.p1seciniciaistit2{}
-.p1sumariopeso1pv{}
+.d0secsumario {
+    background: url(../images/pv_referencias.svg) top left no-repeat;
+    padding: 2em;
+}
 
-.p1sumariopeso1{}
-.p1sumariopeso2{}
-.p1sumariopeso3{}
-.p1sumariopeso4{}
-.p1sumariopeso5{}
-.p1sumarioextrapeso1{}
-.p1sumarioextrapeso2{}
+.d0secsumario>.p1seciniciaistit1 {
+    background: var(--branco);
+    border-radius: 5em;
+    font-style: var(--titulo);
+    font-size: var(--peso4);
+    font-weight: bold;
+    padding: 0.2em 0.6em;
+    margin: 1em 0 1em 1em;
+    width: max-content;
+    max-width: 100%;
+}
+.d0navsumario{
+    margin: 1em 0;
+}
+.d0navsumario li{
+    margin: 0.5em 0;
+}
+.p1seciniciaistit1{
+     background: var(--apresentacao);
+    border-radius: 5em;
+    font-style: var(--titulo);
+    font-size: var(--peso4);
+    font-weight: bold;
+    padding: 0.5em 0.6em;
+    margin: 1.2em 0 0em 0em;
+    width: max-content;
+}
+.p1seciniciaistit2{
+    font-style: var(--texto);
+    font-size: var(--pesoPadrao);
+    font-weight: bold;
+}
+.p1sumariopeso1pv{
+    background: var(--preto);
+    color: var(--branco);
+    font-weight: bold;
+    padding: 0.2em 0.5em;
+}
+.p1sumarioextrapeso1 {
+    margin: 0.5em 0;
+}
+.p1sumarioextrapeso1 a {
+    color: var(--turquesa1);
+    font-weight: bold;
+   
+}
+.p1sumariopeso1{
+    margin-top: 1.5em !important;
+}
+.p1sumariopeso1>a {
+    color: var(--turquesa1);
+    font-weight: bold;
+    font-size: var(--peso7);
+}
+
+.p1sumariopeso1>ul {
+    margin: 0.5em 0;
+}
+
+.p1sumariopeso2>a {
+    color: var(--preto);
+    font-weight: bold;
+    font-size: var(--peso7);
+    margin: 0 0 0 0.5em;
+}
+
+.p1sumariopeso3>a {
+    color: var(--preto);
+    font-size: var(--pesoPadrao);
+    font-weight: 400;
+    margin: 0 0 0 1em;
+}
+
+.p1sumariopeso4>a {
+    color: var(--preto);
+    font-size: var(--peso9);
+    font-weight: 400;
+    margin: 0 0 0 2em;
+}
+
+.p1sumariopeso5 {}
+.p1sumariopeso5>a {
+    color: var(--preto);
+    font-size: var(--peso9);
+    font-weight: 400;
+    margin: 0 0 0 3em;
+}
+.p1sumariopeso6>a {
+    color: var(--preto);
+    font-size: var(--peso9);
+    font-weight: 400;
+    margin: 0 0 0 4em;
+}
+
+.p1sumarioextrapeso1 {}
+
+.p1sumarioextrapeso2>a {
+    color: var(--preto);
+    font-weight: bold;
+}
+.p1sumarioextrapeso2> a> .c0destaquecapmp{
+    background: var(--roxo2);
+    color: var(--manuFundo);
+    font-weight: bold;
+    padding: 0.2em 0.5em;
+}
+
+
 .p1sumarioextrapeso3{}
 .p1sumariopeso1numero{}
 .p1sumariopeso2numero{}
@@ -619,6 +722,30 @@ p.p1tabelatextoitem {
 .tb_tabela tr th:empty {
     height: 40px;
 }
+
+
+.o0pronuncia .tb_tabela td {
+    border: 2px solid var(--branco);
+    background: var(--lilas4);
+}
+.o0pronuncia .tb_tabela th {
+    border: 2px solid var(--branco);
+    background: var(--lilas4);
+    font-family: var(--titulo);
+    font-size: 0.9em;
+    text-align: center;
+}
+   /* Estilo para as colunas ímpares */
+   .o0pronuncia .tb_tabela td:nth-child(odd),
+   .o0pronuncia .tb_tabela  th:nth-child(odd) {
+       background-color: var(--lilas4);
+   }
+
+   /* Estilo para as colunas pares */
+   .o0pronuncia .tb_tabela  td:nth-child(even),
+   .o0pronuncia .tb_tabela  th:nth-child(even) {
+       background-color: var(--lilas3);
+   }
 
 .o0sec4 .quadro td:first-child, 
 .o0sec4 .quadro th:first-child,
@@ -920,7 +1047,7 @@ p1sec10tit4
     background-color: var(--verde3);
     color: var(--preto);
     font-family: var(--titulo);
-    font-size: var(--peso8);
+    font-size: var(--peso7);
     font-weight: bold;
    
     width: max-content;
@@ -955,7 +1082,7 @@ p1sec10tit4
     background-color: var(--midiaticaFundo);
     color: var(--preto);
     font-family: var(--titulo);
-    font-size: var(--peso8);
+    font-size: var(--peso7);
     font-weight: bold;
     padding: 0;
     width: max-content;
@@ -991,7 +1118,7 @@ p1sec10tit4
     font-family: var(--titulo);
     font-weight: bold;
     color: var(--preto);
-    font-size: var(--peso8);
+    font-size: var(--peso7);
     width: max-content;
     max-width: 100%;
     margin: 0.5em 0;
@@ -1117,6 +1244,8 @@ p2referenciasbibliocoment
 p2textosemrecuo
 p2textosemrecuoitem
 p2textosemrecuoitemcont
+p2textosemrecuosubitem
+p2textosemrecuosubitemcont
 p2textonumsemrecuo
 p2textomarcadorsemrecuo
 p2textomarcadorsemrecuocont
@@ -1128,10 +1257,13 @@ p2textosemrecuonumitemcont
 p2textosemrecuonumletra
 p2textosemrecuonumletracont
 p2textosemrecuoletra
+p2textosemrecuoletracont
 */
 .p2textosemrecuo,
 .p2textosemrecuoitem,
 .p2textosemrecuoitemcont,
+.p2textosemrecuosubitem,
+.p2textosemrecuosubitemcont,
 .p2textonumsemrecuo,
 .p2textomarcadorsemrecuo,
 .p2textomarcadorsemrecuocont,
@@ -1141,7 +1273,9 @@ p2textosemrecuoletra
 .p2textosemrecuonumitem,
 .p2textosemrecuonumitemcont,
 .p2textosemrecuonumletra,
-.p2textosemrecuonumletracont{
+.p2textosemrecuonumletracont,
+.p2textosemrecuoletra,
+.p2textosemrecuoletracont{
     font-family: var(--texto);
     font-size: var(--pesoPadrao);
     text-align: justify;
@@ -1165,6 +1299,25 @@ p.p2textosemrecuoitem::before {
 .p2textosemrecuoitemcont{
     margin: 0.5em 0 0.5em 1em;
 }
+
+ul.p2textosemrecuosubitem{
+    list-style: disc;
+    margin: 0.5em 0 0.5em 2em;
+}
+p.p2textosemrecuosubitem{
+    margin: 0.5em 0 0.5em 2em;
+}
+p.p2textosemrecuosubitem::before {
+    content: ''; /*content: '•';*/
+    font-size: 1.2em;
+    margin: 0 0 0 -0.8em;
+    position: absolute;
+}
+.p2textosemrecuosubitemcont{
+    margin: 0.5em 0 0.5em 2em;
+}
+
+
 .p2textonumsemrecuo{
     margin: 0.5em 0 0.5em 2em;
 }
@@ -1211,7 +1364,9 @@ p.p2textosemrecuonumitem::before{
 .p2textosemrecuoletra {
     margin: 0.5em 0 0.5em 2em;
 }
-
+.p2textosemrecuoletracont{
+    margin: 0.5em 0 0.5em 2em;
+}
 
 /* TEXTO PRINCIPAL */
 /* 
@@ -1227,6 +1382,7 @@ p2textoletracont
 p2textoletraitem
 p2textoletraitemcont
 p2textomarcador
+p2textomarcadorcont
 p2textomarcadorromano
 p2textomarcadorletra
 p2textomarcadorletracont
@@ -1247,6 +1403,7 @@ p2textomarcadorsubitemcont
 .p2textoletraitem,
 .p2textoletraitemcont,
 .p2textomarcador,
+.p2textomarcadorcont,
 .p2textomarcadorromano,
 .p2textomarcadorletra,
 .p2textomarcadorletracont,
@@ -1339,6 +1496,9 @@ p.p2textoletraitem::before {
 }
 
 .p2textomarcador{
+    margin: 0.5em 0 0.5em 50px;
+}
+.p2textomarcadorcont{
     margin: 0.5em 0 0.5em 50px;
 }
 .p2textomarcadorromano{
@@ -1916,6 +2076,7 @@ p3citacaotit2
 p3citacaoolho
 p3citacaosemrecuo
 p3citacao
+p3citacaopoema
 p3citacaoitem
 p3citacaoitemcont
 p3citacaoletra
@@ -1929,6 +2090,7 @@ p3citacaonumerocont
 .p3citacaoolho,
 .p3citacaosemrecuo,
 .p3citacao,
+.p3citacaopoema,
 .p3citacaoitem,
 .p3citacaoitemcont,
 .p3citacaoletra,
@@ -1987,6 +2149,10 @@ p3citacaonumerocont
     text-align: justify;
     text-indent: 1.5em;
     margin: 0.5em 0;
+}
+
+.p3citacaopoema{
+    margin: 0.5em 0 0.5em 1em;
 }
 
 ul.p3citacaoitem{
@@ -2268,6 +2434,11 @@ p5aberturaobjtexto
 
 /*👉ESTILOS EXCLUSIVOS DO DIGITAL (Link)👈*/
 /* 
+d0secsumario
+d0sumariosecinicial
+d0navsumario
+
+d0groupline
 d0grouptit
 d0icoatencao
 d0sumariosecinicial
@@ -2301,7 +2472,12 @@ d0carimbo
 d0linha
 d0boxpoema
 d0separabloco
+d0tabuleiro
 */
+.d0secsumario{}
+.d0sumariosecinicial{}
+.d0navsumario{}
+.d0groupline{}
 .d0grouptit{}
 .d0icoatencao{}
 .d0sumariosecinicial{}
@@ -2406,13 +2582,14 @@ d0separabloco
 .d0boxpoema{
     padding: 1em 3em !important;    
  }
+ .d0boxpoema>blockquote{
+    line-height: 2em;
+}
 .d0separabloco{
     margin: 2em 0 0 0 !important;
 }
-.d0boxpoema>blockquote{
-    line-height: 2em;
-}
 
+.d0tabuleiro{}
 
 /*👉ESTILOS DIGITAL: página crédito👈*/
 /* 
@@ -2426,6 +2603,7 @@ d1infoimpressao
 */
 
 .d1pagecreditos{
+    background: var(--branco);
     border: 1px solid var(--preto);
     padding: 1em 1.5em;
 }
@@ -2453,6 +2631,18 @@ d1infoimpressao
     padding: 1em;
     margin: 1em;
 }
+
+/*👉ESTILOS DIGITAL: atividades adaptadas👈*/
+/* 
+d2boxadaptacaoconteudo
+d2boxadaptaprof
+d2boxadaptaaluno
+d2adaptadatit
+*/
+.d2boxadaptacaoconteudo{}
+.d2boxadaptaprof{}
+.d2boxadaptaaluno{}
+.d2adaptadatit{}
 
 /* d2hyperlinkoed */
 .d2hyperlinkoed{}
@@ -2492,10 +2682,13 @@ c0destaquesecao 👉Estilo de caracter utilizado no sumário mp
 */
 
 .c5indicacao{
-    background: var(--amarelo1);
-    font-weight: bold;
-    padding: 0.2em 0.4em;
+    background: var(--amarelo2);
+    font-family: var(--titulo);
+    font-weight: 900;
+    font-size: var(--pesoMenor)!important;
+    padding: 0.1em 0.4em;
 }
+
 .c0destaqueletra{
     font-weight: bold;
     width: 30px;
@@ -2837,9 +3030,43 @@ o0pronunciation 👉 Especifico de inglês
 */
 .o0mpg{}
 .o0facsimile{}
-.o0secconheca{}
-.o0secapresentacao{}
-.o0secconheca2{}
+.o0secconheca{
+    background: var(--apresentacao);
+}
+.o0secconheca .box{
+    background: 
+    url(../images/pv_textura.svg) no-repeat,
+    url(../images/pv_textura.svg) no-repeat;
+    background-position-x: 110%, -80px ;
+    background-position-y: 30px, 200px ;
+    padding: 2em;
+   
+}
+.o0secapresentacao{
+    background: url(../images/pv_referencias.svg) top left no-repeat var(--apresentacao);
+    padding: 2em;
+}
+.o0secapresentacao .box{
+    border-left: 2px solid var(--turquesa2);
+    border-bottom:  2px solid var(--turquesa2);
+    border-radius:0 1em 0 1em;
+    padding: 1em;
+    margin-top: -1em;
+
+}
+.o0secconheca2{
+    border-top: 2px solid var(--turquesa2);
+    border-right: 2px solid var(--turquesa2);
+    padding: 1em 1em 0 0;
+    border-radius:0em 1em 0  0 ;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+
+}
+.o0secconheca2 div {
+    width: 200px;
+}
 .o0aberturabox{
     background: url(../images/bg_aberturabuttom.svg) top left no-repeat;
     background-size: auto;
@@ -2952,8 +3179,14 @@ o0pronunciation 👉 Especifico de inglês
     margin: 1em 0;
 }
 .o0sec1box2{}
-.o0sec2box{}
-.o0sec2box2{}
+.o0sec2box{
+    background: var(--lilas4);
+    border-radius: 1em;
+    margin: 1em 0;
+    padding: 1em;
+}
+.o0sec2box2{
+}
 .o0sec3box{}
 .o0sec3box2{}
 .o0sec4box{
@@ -3117,7 +3350,7 @@ margin:-10px 0 0 -42px ;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 0.2em 1em;
-    background: var(--laranja2);
+    background: var(--rosa2);
     justify-content: center;
     border-radius: 0.5em;
     padding: 1em;
@@ -3154,6 +3387,7 @@ o1fioindicacaoroxo1
 o1fioindicacaoverde1
 o1boxfioroxo1
 o1boxfioazul1
+o1boxfioverde1
 o1fiocotapreto
 o1setaroxo1
 o1setaazul1
@@ -3179,6 +3413,7 @@ o1zoomcontorno
 .o1fioindicacaoverde1{}
 .o1boxfioroxo1{}
 .o1boxfioazul1{}
+.o1boxfioverde1{}
 .o1fiocotapreto{}
 .o1setaroxo1{}
 .o1setaazul1{}
@@ -3505,7 +3740,7 @@ margin: 10px 0 0 0;
 .o4destaquepalavrabox{}
 .o4destaquepalavrafio{}
 .o4recadoimagem1{
-    background: var(--cinza);
+    background: var(--recado);
 }
 .o4recadoimagem2{
     background: var(--branco);
@@ -3572,6 +3807,7 @@ o5prancheta
 o5lousa
 o5quadrobranco
 o5moldura
+o5navegadorfundobranco
 o5navegadorbarra
 o5navegadorfundo
 o5verbetedicionario
@@ -3601,9 +3837,14 @@ o5redesocial2
 .o5lousa{}
 .o5quadrobranco{}
 .o5moldura{}
+.o5navegadorfundobranco{}
 .o5navegadorbarra{}
 .o5navegadorfundo{}
-.o5verbetedicionario{}
+.o5verbetedicionario{
+    border: 2px solid var(--rosa1);
+    margin: 1em 0;
+    padding: 1em;
+}
 .o5curriculo{}
 .o5email{}
 .o5email2{}
@@ -3630,6 +3871,7 @@ o6fluxogramadecisao
 /* 
 oemestrategias
 oemestrategias2
+oemestrategias3
 oemamplieseurepertoriobox
 */
 .oemestrategias {
@@ -3681,7 +3923,7 @@ oemamplieseurepertoriobox
   border: 2px solid var(--branco);
   margin: 0.5em;
 }
-
+.oemestrategias3{}
 .oemamplieseurepertoriobox {}
 
 /* ESTILOS ESPECIFICOS */
