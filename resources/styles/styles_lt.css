@@ -597,7 +597,7 @@ p0tit6negativo
     background-size:100% ;
     background-position-y:-30px ;
 }
-.p0tit2>span{
+.p0tit2>.d0tit2{
     background: var(--preto);
     border-radius: 5em;
     border: 8px solid var(--turquesa2);
